@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Crypto</title>
+
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div id="crypto-modal" class ="container-crypto">
+            <div class="inner-container">
+                <div id="title-div">
+                    <h1 style="text-align: center;color: blue; margin-top: 1%">Consulta de criptomoedas</h1>
+                </div>
+                <a href = "./logout" >
+                    <button class="logOutModal">
+                        LogOut
+                    </button>
+                </a>
+
+        
+                <div id = "content-div">
+                    <div id="forms-div">
+                        <p style="text-align: center;font-weight: 800; padding-bottom:5%" >Entre com os valores de busca</p>
+                    
+                        <form id="form-crypto" action="#" autocomplete="off" >
+                            <div id="form-inputs">
+                                <label for="datalist-crypto">Criptomoeda</label><br>
+                                <input required class="datalist" list="datalist-crypto" id="input-datalist-crypto" placeholder="Digite e selecione um valor">
+                                <datalist id="datalist-crypto">
+                                    <option value = "Bitcoin (BTC)">
+                                    <option value = "Ethereum (ETH)">
+                                    <option value = "USD Coin (USDC)">
+                                    <option value = "XRP (XRP)">
+                                    <option value = "Dai (DAI)">
+                                    <option value = "Chainlink (LINK)">
+                                    <option value = "Uniswap (UNI)">
+                                </datalist>
+                                <br>
+                                
+                                <label for="datalist-ano">Ano</label><br>
+                                <input required class="datalist" list="datalist-ano" id="input-datalist-ano" placeholder="Digite e selecione um valor">
+                                <datalist id="datalist-ano">
+                                    <option value = "2021">
+                                    <option value = "2020">
+                                    <option value = "2019">
+                                    <option value = "2018">
+                                    <option value = "2017">
+                                    <option value = "2016">
+                                    <option value = "2015">
+                                    <option value = "2014">
+                                    <option value = "2013">
+                                    <option value = "2012">
+                                    <option value = "2011">
+                                    <option value = "2010">
+                                </datalist>
+                                <br>
+                                <label for="datalist-mes">Mês</label><br>
+                                <input required class="datalist" list="datalist-mes" id="input-datalist-mes" placeholder="Digite e selecione um valor">
+                                <datalist id="datalist-mes">
+                                    <option value = "Janeiro - 1">
+                                    <option value = "Fevereiro - 2">
+                                    <option value = "Março - 3">
+                                    <option value = "Abril - 4">
+                                    <option value = "Maio - 5">
+                                    <option value = "Junho - 6">
+                                    <option value = "Julho - 7">
+                                    <option value = "Agosto - 8">
+                                    <option value = "Setembro - 9">
+                                    <option value = "Outubro - 10">
+                                    <option value = "Novembro - 11">
+                                    <option value = "Dezembro - 12">
+                                </datalist>
+                                <br>
+
+                                <label for="datalist-dia">Dia</label><br>
+                                <input required class="datalist" list="datalist-dia" id="input-datalist-dia" placeholder="Digite e selecione um valor">
+                                <datalist id="datalist-dia">
+                                    <option value = "1">
+                                    <option value = "2">
+                                    <option value = "3">
+                                    <option value = "4">
+                                    <option value = "5">
+                                    <option value = "6">
+                                    <option value = "7">
+                                    <option value = "8">
+                                    <option value = "9">
+                                    <option value = "10">
+                                    <option value = "11">
+                                    <option value = "12">
+                                    <option value = "12">
+                                    <option value = "13">
+                                    <option value = "14">
+                                    <option value = "15">
+                                    <option value = "16">
+                                    <option value = "17">
+                                    <option value = "18">
+                                    <option value = "19">
+                                    <option value = "20">
+                                    <option value = "21">
+                                    <option value = "22">
+                                    <option value = "23">
+                                    <option value = "24">
+                                    <option value = "25">
+                                    <option value = "26">
+                                    <option value = "27">
+                                    <option value = "28">
+                                    <option value = "29">
+                                    <option value = "30">
+                                    <option value = "31">
+                                </datalist>
+                                <br>
+                            </div>
+                        
+                            <div id="form-submit">
+                                <button id = "searchButton" >buscar</button>
+                            </div>
+                        </form>
+                    </div> 
+                
+                    <div id="result-div">
+                        <p style="text-align: center;font-weight: 600;">Resultado da busca</p>
+                        <table id="result-crypto"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
